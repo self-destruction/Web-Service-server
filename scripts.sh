@@ -5,3 +5,5 @@ protoc -I helloworld/ helloworld/helloworld.proto --go_out=plugins=grpc:hellowor
 
 go run main.go
 node greeter_client.js
+
+protoc -I proto/ helloworld.proto --go_out=plugins=grpc:proto

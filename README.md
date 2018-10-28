@@ -2,4 +2,4 @@
 ### Запуск:
 ```go run main.go```  
 ### Компиляция proto файла:
-```protoc -I helloworld/ helloworld/helloworld.proto --go_out=plugins=grpc:helloworld```
+```protoc -I proto/ proto/credit.proto --go_out=plugins=grpc:proto```

@@ -1,0 +1,23 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package credit;
+
+service Credit {
+  rpc GetBankAnswer (UserRequest) returns (BankReply) {}
+}
+
+message User {
+  string surname = 1;
+  string name = 2;
+  string patronymic = 3;
+  int32 age = 4;
+}
+
+message UserRequest {
+  User user = 1;
+}
+
+message BankReply {
+  string message = 1;
+  bool approved = 2;
+}
